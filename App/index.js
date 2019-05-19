@@ -7,6 +7,7 @@ import LoginPage from "./Screens/Login";
 import {StyleSheet, View} from "react-native";
 import {Route} from "react-router";
 import Home from "./Screens/Home";
+import constantes from "./constantes";
 
 export default () => {
     return(
@@ -26,7 +27,7 @@ export default () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2c3e50',
+        backgroundColor: constantes.colors.backgroundColor,
         paddingTop: 130
     }
 });

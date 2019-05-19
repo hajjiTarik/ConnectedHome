@@ -1,6 +1,7 @@
 import React from "react";
 import {KeyboardAvoidingView, StyleSheet} from "react-native";
 import LoginForm from "./Components/LoginForm";
+import constants from "../../constantes";
 
 const Login = () => {
     return (
@@ -14,7 +15,7 @@ const Login = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2c3e50',
+        backgroundColor: constants.colors.backgroundColor,
         paddingTop: 130
     }
 });

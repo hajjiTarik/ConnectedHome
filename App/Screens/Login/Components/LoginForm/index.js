@@ -2,6 +2,8 @@ import { View, Text, TextInput, TouchableOpacity ,StyleSheet ,StatusBar} from 'r
 import { Redirect } from "react-router";
 import React, {Component} from "react";
 
+import constantes from "../../../../constantes";
+
 class LoginForm extends Component {
     constructor(props){
         super(props);
@@ -23,6 +25,7 @@ class LoginForm extends Component {
         return (
             <View style={styles.container}>
                 <StatusBar barStyle="light-content"/>
+                <Text></Text>
                 <TextInput style = {styles.input}
                            autoCapitalize="none"
                            onSubmitEditing={() => this.passwordInput.focus()}
@@ -38,7 +41,7 @@ class LoginForm extends Component {
                            placeholderTextColor='rgba(225,225,225,0.7)'
                            secureTextEntry/>
                 <TouchableOpacity style={styles.buttonContainer} onPress={this.onButtonPress}>
-                    <Text  style={styles.buttonText}>LOGIN</Text>
+                    <Text  style={styles.buttonText}>tTOTO</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -50,8 +53,8 @@ const styles = StyleSheet.create({
         padding: 20
     },
     input:{
+        backgroundColor: constantes.colors.inputBgColor,
         height: 40,
-        backgroundColor: 'rgba(225,225,225,0.2)',
         marginBottom: 10,
         padding: 10,
         color: '#fff'
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
         fontWeight: '700'
     },
     loginButton:{
-        backgroundColor:  '#2980b6',
+        backgroundColor: constantes.colors.inputBgColor,
         color: '#fff'
     }
 
